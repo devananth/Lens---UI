@@ -1,0 +1,21 @@
+@import url('./variables.css');
+
+.rounded-none{
+    border-radius: 0;
+}
+
+.rounded{
+    border-radius: var(--br-sm);
+}
+
+.rounded-md{
+    border-radius: var(--br-md);
+}
+
+.rounded-lg{
+    border-radius: var(--br-lg);
+}
+
+.rounded-full{
+    border-radius: var(--br-full);
+}

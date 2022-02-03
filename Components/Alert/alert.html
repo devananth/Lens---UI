@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Lens UI | Alerts</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="../../index.html" class="nav-links mr-2"
+            ><strong>Home</strong></a
+          >
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="#" class="sidebar__item">Alerts</a>
+          <a href="#" class="sidebar__item">Avatars</a>
+          <a href="#" class="sidebar__item">Badges</a>
+          <a href="#" class="sidebar__item">Buttons</a>
+          <a href="#" class="sidebar__item">Card</a>
+          <a href="#" class="sidebar__item">Image</a>
+          <a href="#" class="sidebar__item">Inputs</a>
+          <a href="#" class="sidebar__item">Lists</a>
+          <a href="#" class="sidebar__item">Modal</a>
+          <a href="#" class="sidebar__item">Navigation</a>
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="#" class="sidebar__item">Toast</a>
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Alerts</h1>
+          <p class="component__description">
+            Alerts communicate short, important information to the user, without
+            interrupting their flow. Provide contextual feedback messages for
+            typical user actions with the handful of available and flexible
+            alert messages.
+          </p>
+          <div class="component__examples">
+            <h4 id="alerts" class="mb-1">Example of Simple Alert</h4>
+
+            <p class="txt-light mb-1">
+              Alerts are available in 5 types- success alert, error alert,
+              warning alert, primary alert, secondary alert.
+            </p>
+
+            <div class="component__examples--container p-1 rounded">
+              <div class="alert alert-primary">
+                <span>Primary Alert</span>
+              </div>
+              <div class="alert alert-secondary">
+                <span>Secondary Alert</span>
+              </div>
+              <div class="alert alert-info">
+                <span>Information Alert</span>
+              </div>
+              <div class="alert alert-success">
+                <span>Success Alert</span>
+              </div>
+              <div class="alert alert-warning">
+                <span>Warning Alert</span>
+              </div>
+              <div class="alert alert-danger">
+                <span>Danger Alert</span>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=506&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2509%253Cspan%253EPrimary%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2509%253Cspan%253ESecondary%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2509%253Cspan%253EInformation%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%2509%250A%2509%253Cspan%253ESuccess%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509%253Cspan%253EWarning%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2509%253Cspan%253EDanger%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div id="iconAlerts" class="component__examples mt-2">
+            <h4 class="mb-1">Example of Alert with Icons</h4>
+            <p class="txt-light mb-1">
+              An icon is added along with the alert message in the alert
+              container.
+            </p>
+            <div class="component__examples--container p-1 rounded">
+              <div class="alert alert-info">
+                <span class="icon">
+                  <i class="fas fa-info"></i>
+                </span>
+                <span>Information Alert</span>
+              </div>
+              <div class="alert alert-success">
+                <span class="icon">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+                <span>Success Alert</span>
+              </div>
+              <div class="alert alert-warning">
+                <span class="icon">
+                  <i class="fa fa-exclamation-circle"></i>
+                </span>
+                <span>Warning Alert</span>
+              </div>
+              <div class="alert alert-danger">
+                <span class="icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <span>Danger Alert</span>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%253EInformation%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%253ESuccess%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%253EWarning%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%253EDanger%2520Alert%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div id="dismissAlerts" class="component__examples mt-2">
+            <h4 class="mb-1">Example of Alert with Dismiss Button</h4>
+            <p class="txt-light mb-1">
+              Alert with dismiss button (i.e : close button) which is removes
+              the alert which user clicks the close button.
+            </p>
+            <div class="component__examples--container p-1 rounded">
+              <div class="alert alert-danger alert-dismiss">
+                <span class="icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <span>Danger Alert</span>
+                <span class="icon close-btn">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <h4 class="mb-1">CSS Code</h4>
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-danger%2520alert-dismiss%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%253EDanger%2520Alert%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2520close-btn%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <h4 class="mb-1">JavaScript Code</h4>
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520closeBtn%2520%253D%2520document.querySelector%28%27.alert-dismiss%2520.close-btn%27%29%253B%250A%250AcloseBtn.addEventListener%28%27click%27%2520%252C%2520%28%29%2520%253D%253E%2520%257B%250A%250A%2520%2520%2520%2520const%2520iconContainer%2520%253D%2520closeBtn.parentElement%253B%250A%250A%2520%2520%2520%2520const%2520alert%2520%253D%2520iconContainer.parentElement%253B%250A%250A%2520%2520%2520%2520alert.remove%28%29%253B%250A%250A%257D%29%253B"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center end my-2">
+            <a href="#">
+              Avatars
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#alerts" class="aside__item" target="_self">
+            Simple Alerts
+          </a>
+          <a href="#iconAlerts" class="aside__item" target="_self"
+            >Alerts With Icons</a
+          >
+          <a href="#dismissAlerts" class="aside__item" target="_self"
+            >Alerts With Dismiss</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="alert.js"></script>
+    <script src="../../main.js"></script>
+  </body>
+</html>
