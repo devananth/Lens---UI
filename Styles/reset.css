@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e8e7e9;
+  background-color: var(--border-light);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-family: "Poppins", "Roboto", "sans-serif";
+  transition: all ease-in 2s;
+}
+
+a,
+span,
+i {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+iframe {
+  block-size: auto;
+  display: inline-block;
+  font-size: inherit;
+  max-inline-size: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+i {
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.3rem;
+}
+
+a,
+button,
+i {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,22 @@
+:root{
+    --primary-color : #0ea5e9;
+    --light-primary-color : #7dd3fc;
+    --dark-primary-color : #0369a1;
+
+    --secondary-color : #94a3b8;
+    --light-secondary-color : #e2e8f0;
+    --dark-secondary-color : #334155;
+
+
+    --info-color : #3B82F6;
+    --light-gray : #e5e7eb;
+    --success-color : #4CAF50;
+    --warning-color : #FF9800;
+    --danger-color : #F44336;
+
+
+    --br-sm : .25rem;
+    --br-md : 1rem;
+    --br-lg : 1.5rem;
+    --br-half : 50%;
+}
