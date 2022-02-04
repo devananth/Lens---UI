@@ -21,11 +21,11 @@
 
 /* Text utility */
 .txt-secondary {
-  color: var(--secondary-txt);
+  color: var(--secondary-color);
 }
 
 .txt-primary {
-  color: var(--primary-txt);
+  color: var(--primary-color);
 }
 
 .txt-strike-through {
