@@ -7,7 +7,19 @@
 @import url("./Styles/flex.css");
 
 /* Components Stylesheets */
-@import url("./Components/Alert/alert.css");
+@import url("./Components/component.css");
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.divider {
+  display: block;
+  border-bottom: 2px solid var(--light-secondary-color);
+  margin: 2rem 0rem;
+}
 
 .icon {
   color: inherit;
@@ -99,6 +111,7 @@
 
 .component__description {
   color: var(--dark-secondary-color);
+  margin-bottom: 1rem;
 }
 
 .component__examples--container {
@@ -109,6 +122,8 @@
 .component__carbon--container {
   width: 100%;
   height: max-content;
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
 }
 
 .component__carbon--container iframe {
@@ -190,13 +205,14 @@
   }
 
   .sidebar {
-    background-color: var(--light-secondary-color);
+    /* background-color: var(--light-secondary-color); */
     width: 100%;
     height: 3.5rem;
     z-index: 2;
     font-weight: 500;
     padding: 0rem 1rem;
     color: black;
+    border-bottom: 1px solid var(--dark-secondary-color);
   }
 
   .sidebar-active .sidebar-icon {
@@ -213,5 +229,9 @@
     font-weight: 600;
     height: 100vh;
     z-index: 3;
+  }
+
+  .sidebar__item {
+    border-bottom: 1px dashed var(--light-gray);
   }
 }

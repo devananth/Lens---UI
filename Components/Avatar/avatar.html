@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Lens UI | Avatar</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="../../index.html" class="nav-links mr-2"
+            ><strong>Home</strong></a
+          >
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="../Alert/alert.html" class="sidebar__item">Alerts</a>
+          <a href="#" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="#" class="sidebar__item">Buttons</a>
+          <a href="#" class="sidebar__item">Card</a>
+          <a href="#" class="sidebar__item">Image</a>
+          <a href="#" class="sidebar__item">Inputs</a>
+          <a href="#" class="sidebar__item">Lists</a>
+          <a href="#" class="sidebar__item">Modal</a>
+          <a href="#" class="sidebar__item">Navigation</a>
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="#" class="sidebar__item">Toast</a>
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Avatars</h1>
+          <p class="component__description">
+            An avatar is an icon or image which is used to represent the person
+            behind it.<br />
+            <span class="txt-light"
+              >Eg: In a profile pic of any social media application.</span
+            >
+          </p>
+
+          <p class="txt-light mb-1">
+            Avatars are available in 4 different sizes. You can add the
+            respective classes to get the your avatar ready.
+          </p>
+
+          <div class="component__examples">
+            <h4 id="roundImage" class="mb-1">
+              Example of Rounded Image Avatar
+            </h4>
+
+            <p class="txt-light mb-1">
+              Rounded image avatars are mostly used a profile pic in many social
+              media.
+            </p>
+
+            <div
+              class="component__examples--container p-1 rounded d-flex align-center wrap gap-2"
+            >
+              <img
+                class="avatar-xxl rounded-full"
+                src="../../Assets/Avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-xl rounded-full"
+                src="../../Assets/Avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-md rounded-full"
+                src="../../Assets/Avatar.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-sm rounded-full"
+                src="../../Assets/Avatar.jpg"
+                alt="avatar"
+              />
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=727.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar-xxl%2520rounded-full%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-xl%2520rounded-full%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-md%2520rounded-full%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-sm%2520rounded-full%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+
+            <div class="component__examples">
+              <h4 id="sqauarImage" class="mt-1">
+                Example of Square Image Avatar
+              </h4>
+
+              <p class="txt-light mb-1">
+                Square image avatars can be created by just adding
+                <span class="txt-primary">.rounded</span> .
+              </p>
+
+              <div
+                class="component__examples--container p-1 rounded d-flex align-center wrap gap-2"
+              >
+                <img
+                  class="avatar-xxl rounded"
+                  src="../../Assets/Avatar.jpg"
+                  alt="avatar"
+                />
+                <img
+                  class="avatar-xl rounded"
+                  src="../../Assets/Avatar.jpg"
+                  alt="avatar"
+                />
+                <img
+                  class="avatar-md rounded"
+                  src="../../Assets/Avatar.jpg"
+                  alt="avatar"
+                />
+                <img
+                  class="avatar-sm rounded"
+                  src="../../Assets/Avatar.jpg"
+                  alt="avatar"
+                />
+
+                <div class="component__carbon--container mt-2">
+                  <code>
+                    <iframe
+                      src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=727.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar-xxl%2520rounded%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-xl%2520rounded%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-md%2520rounded%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%250A%253Cimg%2520class%253D%2522avatar-sm%2520rounded%2522%2520src%253D%2522..%252F..%252FAssets%252FAvatar.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E"
+                      style="border: 0; transform: scale(1); overflow: hidden"
+                      sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <div class="component__examples">
+              <h4 id="textAvatar" class="mt-1">Example of Text Avatar</h4>
+
+              <p class="txt-light mb-1">
+                Text avatars are used to represent the initials of the user's
+                First Name or Last Name. You can use
+                <span class="txt-primary">.avatar-txt</span> to create text
+                avatars.
+              </p>
+
+              <div
+                class="component__examples--container p-1 rounded d-flex align-center wrap gap-2"
+              >
+                <div class="avatar-xxl avatar-txt rounded-full">
+                  <span>Dev</span>
+                </div>
+
+                <div class="avatar-xl avatar-txt rounded-full">
+                  <span>DA</span>
+                </div>
+
+                <div class="avatar-md avatar-txt rounded-full">
+                  <span>DA</span>
+                </div>
+
+                <div class="avatar-sm avatar-txt rounded-full">
+                  <span>DA</span>
+                </div>
+              </div>
+
+              <div class="component__carbon--container mt-2">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=727.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-xxl%2520avatar-txt%2520rounded-full%2522%253E%250A%2520%2520%253Cspan%253EDev%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-xl%2520avatar-txt%2520rounded-full%2522%253E%250A%2520%2520%253Cspan%253EDA%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-md%2520avatar-txt%2520rounded-full%2522%253E%250A%2520%2520%253Cspan%253EDA%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-sm%2520avatar-txt%2520rounded-full%2522%253E%250A%2520%2520%253Cspan%253EDA%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Alert/alert.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Alerts
+            </a>
+            <a href="../Badge/badge.html" class="ml-auto">
+              Badges
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#roundImage" class="aside__item" target="_self">
+            Round Image Avatars
+          </a>
+          <a href="#squareImage" class="aside__item" target="_self"
+            >Square Image Avatar</a
+          >
+          <a href="#textAvatar" class="aside__item" target="_self"
+            >Text Avatar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="../../main.js"></script>
+  </body>
+</html>

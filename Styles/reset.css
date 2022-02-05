@@ -31,7 +31,7 @@ html {
 
 body {
   font-family: "Poppins", "Roboto", "sans-serif";
-  transition: all ease-in 2s;
+  transition: all 0.2s ease-in-out;
 }
 
 a,
