@@ -1,0 +1,101 @@
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: inherit;
+}
+
+.btn-disabled {
+  pointer-events: none;
+}
+
+.btn-small {
+  padding: 0.3rem;
+}
+
+.btn-large {
+  padding: 0.8rem 1rem;
+  font-size: 1.3rem;
+}
+
+.btn-float-action {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--dark-secondary-color);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-1);
+}
+
+/* Primary Button  */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn-primary-outline {
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
+}
+
+.btn-link-primary {
+  text-decoration-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-icon-primary {
+  color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-link-primary:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Secondary Button */
+
+.btn-secondary {
+  background-color: var(--light-secondary-color);
+  color: var(--dark-secondary-color);
+}
+
+.btn-secondary-outline {
+  color: var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+.btn-link-secondary {
+  text-decoration-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-icon-secondary {
+  color: var(--secondary-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary-outline:hover {
+  background-color: var(--dark-secondary-color);
+  color: var(--light-secondary-color);
+}
+
+.btn-link-secondary:hover {
+  color: var(--dark-secondary-color);
+}
