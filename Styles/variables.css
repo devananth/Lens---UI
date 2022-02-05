@@ -18,4 +18,11 @@
   --br-md: 1rem;
   --br-lg: 1.5rem;
   --br-full: 50%;
+
+  --box-shadow-1: 0.9px 2.8px 4.2px rgba(0, 0, 0, 0.404),
+    2.2px 6.7px 5.3px rgba(0, 0, 0, 0.363),
+    4.1px 12.5px 10px rgba(0, 0, 0, 0.035),
+    7.4px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    13.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    33px 100px 80px rgba(0, 0, 0, 0.07);
 }
