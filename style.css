@@ -9,12 +9,6 @@
 /* Components Stylesheets */
 @import url("./Components/component.css");
 
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .divider {
   display: block;
   border-bottom: 2px solid var(--light-secondary-color);
