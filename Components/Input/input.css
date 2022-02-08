@@ -1,0 +1,62 @@
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+.form-input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.form-input-required::after {
+  content: " *";
+  color: var(--danger-color);
+}
+
+.form-input[type="radio"],
+.form-input[type="checkbox"] {
+  width: 3rem;
+  height: 1rem;
+}
+
+.form-input[type="radio"]:focus,
+.form-input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+.invalid-msg {
+  color: var(--danger-color);
+}
+
+.valid-msg {
+  color: var(--success-color);
+}
+
+.form .form-validation-msg {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.form-validation-msg i {
+  font-size: 0.8rem;
+  margin-right: 2px;
+}
+
+.form.error .form-input:invalid ~ .invalid-msg {
+  display: block;
+}
+.form.error .form-input:valid ~ .valid-msg {
+  display: block;
+}
