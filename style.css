@@ -26,6 +26,18 @@
   display: none;
 }
 
+.success {
+  color: var(--success-color);
+}
+
+.danger {
+  color: var(--danger-color);
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow-2);
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;

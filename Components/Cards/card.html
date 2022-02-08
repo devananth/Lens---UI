@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Lens UI | Cards</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/index.html" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="/Components/Alert/alert.html" class="sidebar__item"
+            >Alerts</a
+          >
+          <a href="../Avatar/avatar.html" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="../Button/button.html" class="sidebar__item">Buttons</a>
+          <a href="../Cards/card.html" class="sidebar__item">Card</a>
+          <a href="../Image/image.css" class="sidebar__item">Image</a>
+          <a href="../Input/input.html" class="sidebar__item">Inputs</a>
+          <a href="#" class="sidebar__item">Lists</a>
+          <a href="#" class="sidebar__item">Modal</a>
+          <a href="#" class="sidebar__item">Navigation</a>
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="#" class="sidebar__item">Toast</a>
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Cards</h1>
+          <p class="component__description">
+            Card are used to show user related data collectively, like product
+            details.
+          </p>
+
+          <div class="component__examples">
+            <h4 id="textCards" class="mt-1">Example of Text Cards</h4>
+
+            <p class="txt-light mb-1">
+              You can use the following snippet and customize your own
+              <span class="txt-primary">Text card</span> component.
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex align-center wrap gap-2"
+            >
+              <div
+                class="text__card___container d-flex col p-sm m-1 rounded box-shadow"
+              >
+                <h1 class="txt-3xl txt-bold">Card Title</h1>
+                <h6 class="txt-light">Card Subtitle</h6>
+                <p class="txt-regular">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis recusandae magni corporis rerum earum amet ducimus
+                  at eligendi reprehenderit voluptates.
+                </p>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=974.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text__card___container%2520d-flex%2520col%2520p-sm%2520m-1%2520rounded%2522%253E%250A%2520%2520%253Ch1%2520class%253D%2522txt-3xl%2520txt-bold%2522%253ECard%2520Title%253C%252Fh1%253E%250A%2520%2520%253Ch6%2520class%253D%2522txt-light%2522%253ECard%2520Subtitle%253C%252Fh6%253E%250A%2520%2520%253Cp%2520class%253D%2522txt-regular%2522%253E%250A%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520Perferendis%2520recusandae%2520magni%2520corporis%2520rerum%2520earum%2520amet%2520ducimus%250A%2520%2520%2520%2520at%2520eligendi%2520reprehenderit%2520voluptates.%250A%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="verticalCard" class="mb-1">Example of Vertical Cards</h4>
+
+            <p class="txt-light mb-1">
+              You can use the following snippet and customize your own
+              <span class="txt-primary">Vertical Product card</span> component.
+            </p>
+
+            <div
+              class="component__examples--container p-1 rounded d-flex align-center wrap gap-2"
+            >
+              <div
+                class="card__vertical__container d-flex col box-shadow rounded m-sm"
+              >
+                <span class="txt-badge rounded card__badge">New Offer</span>
+                <div class="card__icon">
+                  <i class="fas fa-heart fa" aria-hidden="true"></i>
+                </div>
+
+                <img
+                  src="/Assets/camera.jpg"
+                  alt="camera"
+                  class="img-responsive card-img"
+                />
+
+                <div class="text-container flex-1 d-flex col py-sm">
+                  <span class="txt-base txt-bold">DSLR</span>
+                  <span class="flex-1 txt-base txt-sbold">
+                    Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+                    S18-55 is II Lens
+                  </span>
+                  <div class="d-flex y-center gap-1">
+                    <span class="txt-2xl txt-bold">Rs.2999</span>
+                    <span class="txt-strike">Rs.9999</span>
+                    <span class="txt-bold danger">60%</span>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card__vertical__container d-flex col box-shadow rounded m-sm"
+              >
+                <span class="txt-badge rounded card__badge">New Offer</span>
+                <div class="card__icon">
+                  <i class="fas fa-times"></i>
+                </div>
+
+                <img
+                  src="/Assets/cameraSales.jpg"
+                  alt="camera"
+                  class="img-responsive card-img"
+                />
+
+                <div class="text-container flex-1 d-flex col py-sm">
+                  <span class="txt-base txt-bold">DSLR</span>
+                  <span class="flex-1 txt-base txt-sbold">
+                    Canon EOS 1500D 24.1 Dig S18-55 is II Lens
+                  </span>
+                  <div class="d-flex y-center gap-1">
+                    <span class="txt-2xl txt-bold">Rs.2999</span>
+                    <span class="txt-strike">Rs.9999</span>
+                    <span class="txt-bold danger">60%</span>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="component__carbon--container mt-2">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=794.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card__vertical__container%2520d-flex%2520col%2520box-shadow%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522txt-badge%2520rounded%2520card__badge%2522%253ENew%2520Offer%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520fa%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fcamera.jpg%2522%2520alt%253D%2522camera%2522%2520class%253D%2522img-responsive%2520card-img%2522%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522text-container%2520flex-1%2520d-flex%2520col%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-base%2520txt-bold%2522%253EDSLR%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex-1%2520txt-base%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520%2520%2520Canon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%250A%2520%2520%2520%2520%2520%2520S18-55%2520is%2520II%2520Lens%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520y-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-2xl%2520txt-bold%2522%253ERs.2999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-strike%2522%253ERs.9999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-bold%2520danger%2522%253E60%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+
+              <div class="component__carbon--container mt-2">
+                <code>
+                  <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=928.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card__vertical__container%2520d-flex%2520col%2520box-shadow%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522txt-badge%2520rounded%2520card__badge%2522%253ENew%2520Offer%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FcameraSales.jpg%2522%2520alt%253D%2522camera%2522%2520class%253D%2522img-responsive%2520card-img%2522%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522text-container%2520flex-1%2520d-flex%2520col%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-base%2520txt-bold%2522%253EDSLR%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex-1%2520txt-base%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520%2520%2520Canon%2520EOS%25201500D%252024.1%2520Dig%2520S18-55%2520is%2520II%2520Lens%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520y-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-2xl%2520txt-bold%2522%253ERs.2999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-strike%2522%253ERs.9999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-bold%2520danger%2522%253E60%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="border: 0; transform: scale(1); overflow: hidden"
+                    sandbox="allow-scripts allow-same-origin"
+                  >
+                  </iframe>
+                </code>
+              </div>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="horizontalCard" class="mt-1">
+              Example of Horizontal Cards
+            </h4>
+
+            <p class="txt-light mb-1">
+              You can use the following snippet and customize your own
+              <span class="txt-primary">Horizontal Product card</span>
+              component.
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex align-center wrap gap-2"
+            >
+              <div
+                class="card__horizontal__container d-flex box-shadow m-sm rounded"
+              >
+                <span class="txt-badge rounded card__badge">New Offer</span>
+                <div class="card__icon">
+                  <i class="fas fa-heart fa" aria-hidden="true"></i>
+                </div>
+                <div class="img-container">
+                  <img
+                    src="/Assets/cameraSales.jpg"
+                    alt="camera"
+                    class="card-img img-responsive"
+                  />
+                </div>
+
+                <div class="text-container flex-1 d-flex col p-sm">
+                  <span class="txt-base txt-bold">DSLR</span>
+                  <span class="flex-1 txt-base txt-sbold">
+                    Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+                    S18-55 is II Lens.
+                  </span>
+                  <div class="d-flex y-center gap-1">
+                    <span class="txt-2xl txt-bold">Rs.2999</span>
+                    <span class="txt-strike">Rs.9999</span>
+                    <span class="txt-bold danger">60%</span>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-secondary-outline">
+                      Add to Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=1073.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card__horizontal__container%2520d-flex%2520box-shadow%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522txt-badge%2520rounded%2520card__badge%2522%253ENew%2520Offer%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520fa%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522img-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252FcameraSales.jpg%2522%2520alt%253D%2522camera%2522%2520class%253D%2522card-img%2520img-responsive%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522text-container%2520flex-1%2520d-flex%2520col%2520p-sm%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-base%2520txt-bold%2522%253EDSLR%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex-1%2520txt-base%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520%2520%2520Canon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%250A%2520%2520%2520%2520%2520%2520S18-55%2520is%2520II%2520Lens.%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520y-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-2xl%2520txt-bold%2522%253ERs.2999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-strike%2522%253ERs.9999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-bold%2520danger%2522%253E60%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Wishlist%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="textOverlay" class="mt-1">Example of Text Overlay Cards</h4>
+
+            <p class="txt-light mb-1">
+              You can use the following snippet and customize your own
+              <span class="txt-primary">Text Overlay card</span>
+              component.<br />
+              You can have your own overlay text.
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex align-center wrap gap-2"
+            >
+              <div
+                class="card__vertical__container d-flex col box-shadow m-sm rounded"
+              >
+                <span class="txt-badge rounded card__badge">New Offer</span>
+                <div class="card__icon">
+                  <i class="fas fa-heart fa" aria-hidden="true"></i>
+                </div>
+
+                <img
+                  src="/Assets/camera.jpg"
+                  alt="camera"
+                  class="img-responsive card-img"
+                />
+
+                <div class="text-container flex-1 d-flex col py-sm">
+                  <span class="txt-base txt-bold">DSLR</span>
+                  <span class="flex-1 txt-base txt-sbold">
+                    Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+                    S18-55 is II Lens
+                  </span>
+                  <div class="d-flex y-center gap-1">
+                    <span class="txt-2xl txt-bold">Rs.2999</span>
+                    <span class="txt-strike">Rs.9999</span>
+                    <span class="txt-bold danger">60%</span>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="overlay-text d-flex xy-center txt-bold txt-3xl">
+                  Out of Stock
+                </div>
+              </div>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=843.25&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card__vertical__container%2520d-flex%2520col%2520box-shadow%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522txt-badge%2520rounded%2520card__badge%2522%253ENew%2520Offer%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520fa%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cimg%2520src%253D%2522%252FAssets%252Fcamera.jpg%2522%2520alt%253D%2522camera%2522%2520class%253D%2522img-responsive%2520card-img%2522%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522text-container%2520flex-1%2520d-flex%2520col%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-base%2520txt-bold%2522%253EDSLR%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522flex-1%2520txt-base%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520%2520%2520Canon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%250A%2520%2520%2520%2520%2520%2520S18-55%2520is%2520II%2520Lens%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522d-flex%2520y-center%2520gap-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-2xl%2520txt-bold%2522%253ERs.2999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-strike%2522%253ERs.9999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-bold%2520danger%2522%253E60%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522overlay-text%2520d-flex%2520xy-center%2520txt-bold%2520txt-3xl%2522%253E%250A%2520%2520%2520%2520Out%2520of%2520Stock%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Button/button.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Buttons
+            </a>
+            <a href="../Image/image.html" class="ml-auto">
+              Images
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#textCards" class="aside__item"> Text Cards </a>
+          <a href="#verticalCard" class="aside__item">Vertical Product Cards</a>
+          <a href="#horizontalCard" class="aside__item">
+            Horizontal Product Cards
+          </a>
+          <a href="#textOverlay" class="aside__item">Text Overlay Cards</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./input.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
