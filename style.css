@@ -96,8 +96,8 @@
 /* Main Content */
 .main-content {
   grid-area: main;
-  height: 100vh;
-  overflow: auto;
+  max-height: 100vh;
+  overflow: scroll;
 }
 
 .component__description {
