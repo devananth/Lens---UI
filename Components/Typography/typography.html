@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Typography | Lens UI</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/index.html" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="/Components/Alert/alert.html" class="sidebar__item"
+            >Alerts</a
+          >
+          <a href="../Avatar/avatar.html" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="../Button/button.html" class="sidebar__item">Buttons</a>
+          <a href="../Cards/card.html" class="sidebar__item">Card</a>
+          <a href="../Image/image.css" class="sidebar__item">Image</a>
+          <a href="../Input/input.html" class="sidebar__item">Inputs</a>
+          <a href="#" class="sidebar__item">Lists</a>
+          <a href="#" class="sidebar__item">Modal</a>
+          <a href="#" class="sidebar__item">Navigation</a>
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="#" class="sidebar__item">Toast</a>
+          <a href="#" class="sidebar__item">Typography</a>
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Typography</h1>
+          <p class="component__description">
+            You can apply these text utilities in you project.
+          </p>
+
+          <div class="component__examples">
+            <h4 id="heading" class="mt-1">Example of Heading Text</h4>
+
+            <p class="txt-light mb-1">
+              You can use
+              <span class="txt-primary">semantic HTML tags</span> our styles
+              will be applied by default.
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex col wrap"
+            >
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=732.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253E%2520Heading%25201%2520%253C%252Fh1%253E%250A%253Ch2%253E%2520Heading%25202%2520%253C%252Fh2%253E%250A%253Ch3%253E%2520Heading%25203%2520%253C%252Fh3%253E%250A%253Ch4%253E%2520Heading%25204%2520%253C%252Fh4%253E%250A%253Ch5%253E%2520Heading%25205%2520%253C%252Fh5%253E%250A%253Ch6%253E%2520Heading%25206%2520%253C%252Fh6%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="textSizes" class="mb-1">Example of Text Sizes</h4>
+
+            <p class="txt-light mb-1">
+              you can appropriate
+              <span class="txt-primary">text utility classes</span> to change
+              your text size.
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex col space-bw wrap"
+            >
+              <p class="txt-5xl">Paragraph Text</p>
+              <p class="txt-4xl">Paragraph Text</p>
+              <p class="txt-2xl">Paragraph Text</p>
+              <p class="txt-xl">Paragraph Text</p>
+              <p class="txt-lg">Paragraph Text</p>
+              <p class="txt-base">Paragraph Text</p>
+              <p class="txt-sm">Paragraph Text</p>
+              <p class="txt-xs">Paragraph Text</p>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=732.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-5xl%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-4xl%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-2xl%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-xl%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-lg%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-base%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-sm%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-xs%2522%253E%2520Paragraph%2520Text%2520%253C%252Fp%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="textWeight" class="mt-1">Example of Text Weights</h4>
+
+            <p class="txt-light mb-1">
+              you can appropriate
+              <span class="txt-primary">text utility classes</span> to change
+              your text size.<br />
+              <span class="txt-sbold">Eg : </span
+              ><span class="txt-primary">txt-bold , txt-sbold , txt-light</span>
+            </p>
+
+            <div
+              class="component__examples--container p-2 rounded d-flex col wrap"
+            >
+              <p class="txt-black">Black Text</p>
+              <p class="txt-bold">Bold Text</p>
+              <p class="txt-sbold">Semi Bold Text</p>
+              <p class="txt-regular">Regular Text</p>
+              <p class="txt-light">Light Text</p>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=732.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-black%2522%253E%2520Black%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-bold%2522%253E%2520Bold%2520Text%2520%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-sbold%2522%253E%2520Semi%2520Bold%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-regular%2522%253E%2520Regular%2520Text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-light%2522%253E%2520Light%2520Text%253C%252Fp%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <div class="component__examples">
+            <h4 id="textAlign" class="mt-1">
+              Example of Text Decoration and Alignment
+            </h4>
+
+            <p class="txt-light mb-1">
+              You can align your text in different positions using
+              <span class="txt-primary"
+                >.txt-center , .txt-left , .txt-right</span
+              ><br />
+              Even you can style it using classes like
+              <span class="txt-primary"
+                >.txt-strike , .txt-primary , .txt-secondary</span
+              >
+            </p>
+
+            <div class="component__examples--container p-2 rounded">
+              <p class="txt-right">Right Text</p>
+              <p class="txt-left txt-primary">Left Text</p>
+              <p class="txt-center txt-strike-through">Center Text</p>
+            </div>
+
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=732.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-right%2522%253ERight%2520Text%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522txt-left%2520txt-primary%2522%253ELeft%2520Text%253C%252Fp%253E%250A%250A%253Cp%2520class%253D%2522txt-center%2520txt-strike-through%2522%253ECenter%2520Text%253C%252Fp%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Input/input.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Input
+            </a>
+            <a href="../Modal/modal.html" class="ml-auto">
+              Modal
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#heading" class="aside__item"> Heading </a>
+          <a href="#textSizes" class="aside__item">Text Sizes</a>
+          <a href="#textWeight" class="aside__item"> Text Weights </a>
+          <a href="#textAlign" class="aside__item"
+            >Text Decorations & Alignment</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
