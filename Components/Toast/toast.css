@@ -1,0 +1,30 @@
+.toast {
+  width: fit-content;
+  height: 3rem;
+  width: 20rem;
+  padding: var(--sp-0-5);
+  margin: var(--sp-0-5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: 0;
+  z-index: var(--z-index-max);
+}
+
+.toast:not(.demo-toast) {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.demo-toast {
+  display: none;
+}
+
+.demo-toast.active {
+  display: flex;
+}
+
+.toast-primary {
+  background-color: var(--light-primary-color);
+}
