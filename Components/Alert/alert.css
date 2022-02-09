@@ -7,16 +7,16 @@
 }
 
 .alert {
-  padding: 1rem;
+  padding: var(--sp-1);
   border-radius: 5px;
-  margin: 1rem;
+  margin: var(--sp-1);
   font-weight: bold;
   color: inherit;
   border-color: 1px solid inherit;
 }
 
 .alert .icon {
-  margin-right: 0.5rem;
+  margin-right: var(--sp-0-5);
 }
 
 .alert-dismiss {
