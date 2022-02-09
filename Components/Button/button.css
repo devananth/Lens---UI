@@ -5,6 +5,8 @@
   text-align: center;
   display: inline-block;
   text-transform: uppercase;
+  min-width: 4rem;
+  width: fit-content;
 }
 
 .btn-link {
