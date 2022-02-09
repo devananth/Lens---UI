@@ -1,9 +1,10 @@
 .btn {
-  padding: 0.5rem 0.75rem;
+  padding: var(--sp-0-5) var(--sp-0-75);
   border-radius: 5px;
   font-size: 1rem;
   text-align: center;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .btn-link {
@@ -18,11 +19,11 @@
 }
 
 .btn-small {
-  padding: 0.3rem;
+  padding: var(--sp-0-25);
 }
 
 .btn-large {
-  padding: 0.8rem 1rem;
+  padding: var(--sp-1-75) var(--sp-1);
   font-size: 1.3rem;
 }
 

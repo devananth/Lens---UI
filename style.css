@@ -12,14 +12,14 @@
 .divider {
   display: block;
   border-bottom: 2px solid var(--light-secondary-color);
-  margin: 2rem 0rem;
+  margin: var(--sp-2) 0rem;
 }
 
 .icon {
   color: inherit;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0rem 0.5rem;
+  height: var(--sp-1-5);
+  width: var(--sp-1-5);
+  margin: 0rem var(--sp-0-25);
 }
 
 .hide {
@@ -66,7 +66,7 @@
 }
 
 .header__right {
-  margin-right: 3rem;
+  margin-right: var(--sp-3);
 }
 
 .nav-links:hover {
@@ -84,8 +84,8 @@
 }
 
 .sidebar__item {
-  font-size: 1.2rem;
-  padding: 0.5rem;
+  font-size: 1var (--sp-2);
+  padding: var(--sp-0-25);
   width: 100%;
 }
 
@@ -97,11 +97,11 @@
 .sidebar__item a:active {
   color: var(--primary-color);
   font-weight: 500;
-  padding-left: 1.5rem;
+  padding-left: var(--sp-1-5);
 }
 
 .sidebar__content {
-  height: calc(100vh - 2rem);
+  height: calc(100vh - var(--sp-2));
   overflow-y: auto;
 }
 
@@ -114,7 +114,7 @@
 
 .component__description {
   color: var(--dark-secondary-color);
-  margin-bottom: 1rem;
+  margin-bottom: var(--sp-1);
 }
 
 .component__examples--container {
@@ -126,7 +126,7 @@
   width: 100%;
   height: max-content;
   border: 1px solid var(--light-gray);
-  padding: 1rem;
+  padding: var(--sp-1);
 }
 
 .component__carbon--container iframe {
@@ -144,11 +144,11 @@
 .aside {
   grid-area: aside;
   height: 100vh;
-  padding: 0.5rem;
+  padding: var(--sp-0-25);
 }
 
 .aside__item {
-  margin-bottom: 1rem;
+  margin-bottom: var(--sp-1);
 }
 
 .aside__item:hover {
@@ -176,7 +176,7 @@
   .header__left.active {
     background-color: var(--light-secondary-color);
     margin: 0;
-    padding: 1rem;
+    padding: var(--sp-1);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -212,7 +212,7 @@
     height: 3.5rem;
     z-index: 2;
     font-weight: 500;
-    padding: 0rem 1rem;
+    padding: 0rem var(--sp-1);
     color: black;
     border-bottom: 1px solid var(--dark-secondary-color);
   }

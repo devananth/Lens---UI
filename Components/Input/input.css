@@ -1,16 +1,16 @@
 .form-group {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: var(--sp-1);
 }
 
 .form-label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--sp-0-5);
 }
 
 .form-input {
   width: 100%;
-  padding: 0.5rem;
+  padding: var(--sp-0-5);
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid var(--primary-color);
