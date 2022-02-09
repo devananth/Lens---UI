@@ -60,14 +60,17 @@
   color: var(--primary-color);
 }
 
-.btn-primary:hover,
-.btn-link-primary:hover {
+.btn-primary:hover {
   background-color: var(--dark-primary-color);
 }
 
 .btn-primary-outline:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+.btn-link-primary:hover {
+  color: var(--dark-primary-color);
 }
 
 /* Secondary Button */
