@@ -43,8 +43,7 @@
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "header header header"
-    "sidebar main  aside"
-    "sidebar main aside";
+    "sidebar main  aside";
 }
 
 /*  Header  */
@@ -108,7 +107,7 @@
 /* Main Content */
 .main-content {
   grid-area: main;
-  max-height: 100vh;
+  height: 100vh;
   overflow: scroll;
 }
 
@@ -207,10 +206,9 @@
   }
 
   .sidebar {
-    /* background-color: var(--light-secondary-color); */
+    background-color: var(--white-color);
     width: 100%;
     height: 3.5rem;
-    z-index: 2;
     font-weight: 500;
     padding: 0rem var(--sp-1);
     color: black;
