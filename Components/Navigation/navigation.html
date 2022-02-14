@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Navigation | Lens UI</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/index.html" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="/Components/Alert/alert.html" class="sidebar__item"
+            >Alerts</a
+          >
+          <a href="../Avatar/avatar.html" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="../Button/button.html" class="sidebar__item">Buttons</a>
+          <a href="../Cards/card.html" class="sidebar__item">Card</a>
+          <a href="../Image/image.html" class="sidebar__item">Image</a>
+          <a href="../Input/input.html" class="sidebar__item">Inputs</a>
+          <a href="../List/list.html" class="sidebar__item">Lists</a>
+          <a href="../Modal/modal.html" class="sidebar__item">Modal</a>
+          <a href="#" class="sidebar__item">Navigation</a>
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="../Toast/toast.html" class="sidebar__item">Toast</a>
+          <a href="../Typography/typography.html" class="sidebar__item"
+            >Typography</a
+          >
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Navigation</h1>
+          <p class="component__description">
+            Navigation bar is used to navigate through the web apps or websites.
+            This navigation component is responsive. It is a hamburger menu in
+            medium and small devices
+          </p>
+
+          <div class="component__examples">
+            <h4 id="toast" class="mt-1">Example of Simple Responsive Navbar</h4>
+
+            <p class="txt-light">
+              To create a responsive Navbar you can use the below snippet and
+              customize it accordingly.
+            </p>
+
+            <div
+              class="component__examples--container p-1 rounded d-flex col wrap"
+            >
+              <nav class="nav__container">
+                <section class="nav__left">
+                  <div class="nav__brand txt-2xl txt-bold">My Website</div>
+                </section>
+                <div class="nav__search__container">
+                  <span class="icon nav__search__icon">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <input
+                    class="nav__search"
+                    type="search"
+                    placeholder="Enter to Search"
+                  />
+                </div>
+                <section class="nav__right">
+                  <span class="nav__icon nav__hamburger">
+                    <i class="fas fa-bars"></i>
+                  </span>
+                  <ul class="nav__list">
+                    <li class="nav__list__item">
+                      <a href="#">
+                        <div class="badge-container d-flex col xy-center">
+                          <span class="icon nav__icon">
+                            <i class="fas fa-user"></i>
+                          </span>
+                          <span class="nav__icon__text">Login</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav__list__item">
+                      <a href="#">
+                        <div class="badge-container d-flex col xy-center">
+                          <span class="icon nav__icon">
+                            <i class="fas fa-heart"></i>
+                          </span>
+                          <span class="nav__icon__text">Wishlist</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav__list__item">
+                      <a href="#">
+                        <div class="badge-container d-flex col xy-center">
+                          <span class="icon nav__icon">
+                            <i class="fas fa-shopping-cart"></i>
+                          </span>
+                          <span class="nav__icon__text">Cart</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </nav>
+            </div>
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav__container%2522%253E%250A%2520%2520%253Csection%2520class%253D%2522nav__left%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav__brand%2520txt-2xl%2520txt-bold%2522%253EMy%2520Website%253C%252Fdiv%253E%250A%2520%2520%253C%252Fsection%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav__search__container%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon%2520nav__search__icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520class%253D%2522nav__search%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522search%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520to%2520Search%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Csection%2520class%253D%2522nav__right%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav__icon%2520nav__hamburger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav__list%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav__list__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520d-flex%2520col%2520xy-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon%2520nav__icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav__icon__text%2522%253ELogin%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav__list__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520d-flex%2520col%2520xy-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon%2520nav__icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav__icon__text%2522%253EWishlist%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav__list__item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520d-flex%2520col%2520xy-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon%2520nav__icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522nav__icon__text%2522%253ECart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fsection%253E%250A%253C%252Fnav%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Modal/modal.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Modal
+            </a>
+            <a href="../Slider/Slider.html" class="ml-auto">
+              Slider
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#toast" class="aside__item"> Simple Responsive Navbar</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
