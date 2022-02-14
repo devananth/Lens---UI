@@ -1,0 +1,9 @@
+.slider__container {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.slider[type="range"] {
+  cursor: pointer;
+  width: 100%;
+}
