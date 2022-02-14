@@ -156,6 +156,7 @@
 
 /* Media Queries */
 
+/* Hiding the Navbar in small screens , instead having a Hamburger Menu  */
 @media only screen and (max-width: 768px) {
   .hamburger-menu {
     display: flex;
@@ -188,6 +189,7 @@
   }
 }
 
+/*  Hiding the Right Aside in small screens & wide screens */
 @media only screen and (max-width: 1080px) {
   .aside {
     display: none;
@@ -200,6 +202,7 @@
   }
 }
 
+/* Hiding the Sidebar in small and wide screens , instead having dropdown menu */
 @media only screen and (max-width: 1024px) {
   .aside,
   .sidebar__content {
