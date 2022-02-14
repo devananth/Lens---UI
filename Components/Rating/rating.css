@@ -1,0 +1,24 @@
+:root {
+  --rating-color: #ffb400;
+}
+
+.rating__star__icon {
+  color: var(--light-secondary-color);
+  width: var(--sp-1);
+  height: var(--sp-1);
+}
+.rating__star__icon:not(:last-child) {
+  margin-right: var(--sp-0-5);
+}
+
+.rating__star__icon.checked {
+  color: var(--rating-color);
+}
+
+.rating__badge {
+  font-size: 1rem;
+  background-color: var(--light-secondary-color);
+  width: max-content;
+  padding: var(--sp-0-25) var(--sp-0-5);
+  border-radius: var(--sp-0-25);
+}

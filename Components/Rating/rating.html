@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Rating | Lens UI</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/index.html" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="/Components/Alert/alert.html" class="sidebar__item"
+            >Alerts</a
+          >
+          <a href="../Avatar/avatar.html" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="../Button/button.html" class="sidebar__item">Buttons</a>
+          <a href="../Cards/card.html" class="sidebar__item">Card</a>
+          <a href="../Image/image.html" class="sidebar__item">Image</a>
+          <a href="../Input/input.html" class="sidebar__item">Inputs</a>
+          <a href="../List/list.html" class="sidebar__item">Lists</a>
+          <a href="../Modal/modal.html" class="sidebar__item">Modal</a>
+          <a href="../Navigation/navigation.html" class="sidebar__item"
+            >Navigation</a
+          >
+          <a href="../Slider/slider.html" class="sidebar__item">Slider</a>
+          <a href="../Toast/toast.html" class="sidebar__item">Toast</a>
+          <a href="../Typography/typography.html" class="sidebar__item"
+            >Typography</a
+          >
+          <a href="#" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Rating</h1>
+          <p class="component__description">
+            Rating components can be used as read-only badge or in reviews
+            section.
+          </p>
+
+          <div class="component__examples">
+            <h4 id="rating" class="my-1">Example of Rating Badges</h4>
+
+            <div
+              class="component__examples--container p-1 rounded d-flex col gap-3 wrap"
+            >
+              <div class="rating__container">
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <i class="fa fa-star rating__star__icon"></i>
+              </div>
+
+              <div class="rating__badge">
+                <span>4</span>
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <span>| 5</span>
+              </div>
+
+              <div class="rating__badge">
+                <i class="fa fa-star rating__star__icon checked"></i>
+                <span>4/5</span>
+              </div>
+            </div>
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating__container%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating__badge%2522%253E%250A%2520%2520%253Cspan%253E4%253C%252Fspan%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253E%257C%25205%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522rating__badge%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2520rating__star__icon%2520checked%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253E4%252F5%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Typography/typography.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Typography
+            </a>
+          </section>
+        </section>
+      </section>
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#rating" class="aside__item">Rating</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
