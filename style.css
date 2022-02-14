@@ -188,6 +188,18 @@
   }
 }
 
+@media only screen and (max-width: 1080px) {
+  .aside {
+    display: none;
+  }
+  .grid-layout {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main";
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .aside,
   .sidebar__content {
