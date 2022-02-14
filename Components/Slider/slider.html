@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Slider | Lens UI</title>
+  </head>
+  <body>
+    <section class="grid-layout">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="/index.html" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="#" class="nav-links"><strong>Docs</strong></a>
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <section class="sidebar p-1 d-flex col gap-1">
+        <header class="sidebar__header d-flex space-bw align-center">
+          <h3 class="h5">COMPONENT LIST</h3>
+          <span
+            class="icon d-flex xy-center txt-bold rounded-full sidebar-icon"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </header>
+        <section class="sidebar__content d-flex col gap-1 pl-1">
+          <a href="/Components/Alert/alert.html" class="sidebar__item"
+            >Alerts</a
+          >
+          <a href="../Avatar/avatar.html" class="sidebar__item">Avatars</a>
+          <a href="../Badge/badge.html" class="sidebar__item">Badges</a>
+          <a href="../Button/button.html" class="sidebar__item">Buttons</a>
+          <a href="../Cards/card.html" class="sidebar__item">Card</a>
+          <a href="../Image/image.html" class="sidebar__item">Image</a>
+          <a href="../Input/input.html" class="sidebar__item">Inputs</a>
+          <a href="../List/list.html" class="sidebar__item">Lists</a>
+          <a href="../Modal/modal.html" class="sidebar__item">Modal</a>
+          <a href="../Navigation/navigation.html" class="sidebar__item"
+            >Navigation</a
+          >
+          <a href="#" class="sidebar__item">Slider</a>
+          <a href="../Toast/toast.html" class="sidebar__item">Toast</a>
+          <a href="../Typography/typography.html" class="sidebar__item"
+            >Typography</a
+          >
+          <a href="../Rating/rating.html" class="sidebar__item">Rating</a>
+        </section>
+      </section>
+
+      <section class="main-content">
+        <section class="component__wrapper ml-2 flex-col gap-1">
+          <h1 class="component__title mb-0">Slider</h1>
+          <p class="component__description">
+            Sliders are used to decide range for something like sound in videos,
+            price in shopping sites, etc.
+          </p>
+
+          <div class="component__examples">
+            <h4 id="slider" class="mt-1">Example of Sliders</h4>
+
+            <p class="txt-light">
+              We have <span class="txt-primary">3 variations</span> of slider.
+              You can use the appropriate snippet to get your slider ready.
+            </p>
+
+            <div
+              class="component__examples--container p-1 rounded d-flex col gap-3 wrap"
+            >
+              <div class="d-flex col gap-2">
+                <span class="slide__text txt-2xl txt-sbold">Simple Slider</span>
+                <div class="slider__container d-flex x-center gap-1">
+                  <label class="slide__text txt-lg txt-sbold">Volume</label>
+                  <input
+                    class="slider"
+                    type="range"
+                    min="0"
+                    max="30"
+                    step="1"
+                  />
+                </div>
+              </div>
+
+              <div class="d-flex col gap-2">
+                <span class="slide__text txt-2xl txt-sbold"
+                  >Slider with Icon</span
+                >
+                <div class="slider__container d-flex x-center gap-1">
+                  <label class="slide__text txt-lg txt-sbold">
+                    <i class="fas fa-volume-up"></i>
+                  </label>
+                  <input
+                    class="slider"
+                    type="range"
+                    min="0"
+                    max="30"
+                    step="1"
+                  />
+                </div>
+              </div>
+
+              <div class="d-flex col gap-2">
+                <span class="slide__text txt-2xl txt-sbold">Step Slider</span>
+                <div class="slider__container d-flex x-center gap-1">
+                  <label class="slide__text txt-lg txt-sbold"> Price </label>
+                  <input
+                    class="slider"
+                    type="range"
+                    list="steplist"
+                    min="0"
+                    max="100"
+                    step="10"
+                  />
+                  <datalist id="steplist">
+                    <option value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="20">0</option>
+                    <option value="30">0</option>
+                    <option value="40">0</option>
+                    <option value="50">0</option>
+                    <option value="60">0</option>
+                    <option value="70">0</option>
+                    <option value="80">0</option>
+                    <option value="90">0</option>
+                    <option value="100">0</option>
+                  </datalist>
+                </div>
+              </div>
+            </div>
+            <div class="component__carbon--container mt-2">
+              <code>
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2520Simple%2520Slider%2520--%253E%250A%253Cdiv%2520class%253D%2522slider__container%2520d-flex%2520x-center%2520gap-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522slide__text%2520txt-lg%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520Volume%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522slider%2522%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%252230%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2520Slider%2520With%2520Icon%2520--%253E%250A%253Cdiv%2520class%253D%2522slider__container%2520d-flex%2520x-center%2520gap-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522slide__text%2520txt-lg%2520txt-sbold%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-volume-up%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522slider%2522%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%252230%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Step%2520Slider%2520--%253E%250A%253Cdiv%2520class%253D%2522slider__container%2520d-flex%2520x-center%2520gap-1%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522slide__text%2520txt-lg%2520txt-sbold%2522%253E%2520Price%2520%253C%252Flabel%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520class%253D%2522slider%2522%250A%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520list%253D%2522steplist%2522%250A%2520%2520%2520%2520min%253D%25220%2522%250A%2520%2520%2520%2520max%253D%2522100%2522%250A%2520%2520%2520%2520step%253D%252210%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdatalist%2520id%253D%2522steplist%2522%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%25220%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252210%2522%253E10%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252220%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252230%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252240%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252250%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252260%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252270%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252280%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%252290%2522%253E0%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%2520value%253D%2522100%2522%253E0%253C%252Foption%253E%250A%2520%2520%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E"
+                  style="border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </code>
+            </div>
+          </div>
+
+          <section class="pagination d-flex align-center my-2">
+            <a href="../Modal/modal.html">
+              <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
+              Modal
+            </a>
+            <a href="../Slider/Slider.html" class="ml-auto">
+              Slider
+              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+            </a>
+          </section>
+        </section>
+      </section>
+      <div class="aside">
+        <h3 class="h5">On this page</h3>
+        <div class="d-flex col gap-1 p-1">
+          <a href="#slider" class="aside__item">Sliders</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
