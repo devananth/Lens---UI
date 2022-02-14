@@ -27,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  font-size: 90%;
 }
 
 body {
@@ -81,8 +82,8 @@ p {
   font-size: var(--sp-1-5);
 }
 
-@media only screen and (min-width: 600px) {
-  p {
-    font-size: 1.3rem;
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
   }
 }
