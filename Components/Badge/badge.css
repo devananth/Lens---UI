@@ -64,7 +64,7 @@
   background-color: var(--idle);
 }
 
-.badge-container i {
+.badge__icon {
   font-size: 2rem;
 }
 
