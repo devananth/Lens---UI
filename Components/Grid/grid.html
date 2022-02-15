@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/style.css" />
-    <title>Toast | Lens UI</title>
+    <title>Grid | Lens UI</title>
   </head>
   <body>
     <section class="grid-layout">
@@ -77,51 +77,50 @@
             >Navigation</a
           >
           <a href="../Slider/slider.html" class="sidebar__item">Slider</a>
-          <a href="#" class="sidebar__item">Toast</a>
+          <a href="../Toast/toast.html" class="sidebar__item">Toast</a>
           <a href="../Typography/typography.html" class="sidebar__item"
             >Typography</a
           >
           <a href="../Rating/rating.html" class="sidebar__item">Rating</a>
-          <a href="../Grid/grid.html" class="sidebar__item">Grid</a>
+          <a href="#" class="sidebar__item">Grid</a>
         </section>
       </section>
 
       <section class="main-content">
         <section class="component__wrapper ml-2 flex-col gap-1">
-          <h1 class="component__title mb-0">Toast</h1>
+          <h1 class="component__title mb-0">Grid</h1>
           <p class="component__description">
-            This component can be used for
-            <span class="txt-primary">toast</span> or
-            <span class="txt-primary">snackbar</span> component. <br />Toast is
-            mostly used to show feedback message. <br />Snackbar is to used show
-            message that need user action.
-            <br />
+            Grid system is used to align element of HTML page in rows and
+            columns.
           </p>
 
           <div class="component__examples">
-            <h4 id="toast" class="mt-1">Example of Toast</h4>
+            <h4 id="grid50:50" class="my-1">
+              Example of Grid 2 Column Layout (50:50)
+            </h4>
 
-            <p class="txt-light">
-              To create a model you need to wrap your modal in the
-              <span class="txt-primary">.modal-container</span>
+            <p class="txt-light mb-1">
+              You need to use <span class="txt-primary">.grid-50-50</span> class
+              on the parent container.So that the child gets aligned side by
+              side.
             </p>
 
             <div
-              class="component__examples--container p-1 rounded d-flex col wrap"
+              class="component__examples--container p-1 rounded d-flex col gap-3 wrap"
             >
-              <div
-                class="toast toast-primary d-flex xy-center space-bw rounded"
-              >
-                <span class="txt-sbold txt-md">Login Successfull</span>
-                <span class="icon">
-                  <i class="fas fa-times txt-md"></i>
-                </span>
+              <div class="grid-50-50">
+                <div class="box bg-light-primary d-flex xy-center txt-2xl">
+                  Child 1
+                </div>
+                <div class="box bg-light-secondary d-flex xy-center txt-2xl">
+                  Child 2
+                </div>
               </div>
             </div>
             <div class="component__carbon--container mt-2">
               <code>
                 <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520toast-primary%2520d-flex%2520xy-center%2520space-bw%2520rounded%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522txt-sbold%2520txt-md%2522%253ELogin%2520Successfull%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520txt-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-50-50%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522box%2522%253EChild%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522box%2522%253EChild%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                   style="border: 0; transform: scale(1); overflow: hidden"
                   sandbox="allow-scripts allow-same-origin"
                 >
@@ -131,34 +130,34 @@
           </div>
 
           <div class="component__examples">
-            <h4 id="demo" class="mb-1">Live Demo</h4>
+            <h4 id="grid3Col" class="my-1">Example of Grid 3 Column Layout</h4>
 
             <p class="txt-light mb-1">
-              Click on the below button to view the
-              <span class="txt-primary">toast</span>. on the
-              <span class="txt-primary">top right</span> of the browser window.
+              You need to use
+              <span class="txt-primary">.grid-3-col-layout</span> class on the
+              parent container.So that the 3 child elements gets aligned side by
+              side.
             </p>
 
             <div
-              class="component__examples--container p-2 rounded d-flex col space-bw wrap"
+              class="component__examples--container p-1 rounded d-flex col gap-3 wrap"
             >
-              <button class="btn btn-primary toastBtn">Click Here</button>
-
-              <!-- Live Demo Toast -->
-              <div
-                class="toast toast-primary d-flex xy-center space-bw rounded demo-toast"
-              >
-                <span class="txt-sbold txt-md">Login Successfull</span>
-                <span class="icon">
-                  <i class="fas fa-times txt-md"></i>
-                </span>
+              <div class="grid-3-col-layout">
+                <div class="box bg-light-primary d-flex xy-center txt-2xl">
+                  Child 1
+                </div>
+                <div class="box bg-light-secondary d-flex xy-center txt-2xl">
+                  Child 2
+                </div>
+                <div class="box bg-light-primary d-flex xy-center txt-2xl">
+                  Child 3
+                </div>
               </div>
             </div>
-
             <div class="component__carbon--container mt-2">
               <code>
                 <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=732.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Modal%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520modalBtn%2522%253EClick%2520Here%253C%252Fbutton%253E%250A%250A%253C%21--%2520Live%2520Modal%2520--%253E%250A%253Cdiv%2520class%253D%2522modal__container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal%2520rounded%2520box-shadow%2520p-sm%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal__header%2520d-flex%2520space-bw%2520xy-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522txt-3xl%2522%253EDemo%2520Modal%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522modal__content%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520Magnam%2520eos%2520itaque%2520illo%2520sequi%2520nihil%2520distinctio%2520quisquam%2520magni%250A%2520%2520%2520%2520%2520%2520laboriosam%2520qui%2520dolorum%253F%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal__actions%2520d-flex%2520end%2520gap-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Eok%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-3-col-layout%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522box%2522%253EChild%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522box%2522%253EChild%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522box%2522%253EChilde%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                   style="border: 0; transform: scale(1); overflow: hidden"
                   sandbox="allow-scripts allow-same-origin"
                 >
@@ -168,13 +167,9 @@
           </div>
 
           <section class="pagination d-flex align-center my-2">
-            <a href="../Slider/slider.html">
+            <a href="../Rating/rating.html">
               <span class="mr-1"><i class="fa fa-chevron-left"></i></span>
-              Slider
-            </a>
-            <a href="../Typography/typography.html" class="ml-auto">
-              Typography
-              <span class="ml-1"><i class="fa fa-chevron-right"></i></span>
+              Rating
             </a>
           </section>
         </section>
@@ -182,13 +177,13 @@
       <div class="aside">
         <h3 class="h5">On this page</h3>
         <div class="d-flex col gap-1 p-1">
-          <a href="#toast" class="aside__item"> Toast Card</a>
-          <a href="#demo" class="aside__item">Live Toast</a>
+          <a href="#grid50:50" class="aside__item">Grid 2 Column Layout</a>
+
+          <a href="#grid3Col" class="aside__item">Grid 3 Column Layout</a>
         </div>
       </div>
     </section>
 
-    <script src="toast.js"></script>
     <script src="/main.js"></script>
   </body>
 </html>

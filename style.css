@@ -9,6 +9,7 @@
 /* Components Stylesheets */
 @import url("./Components/component.css");
 
+/* Utilities */
 .divider {
   display: block;
   border-bottom: 2px solid var(--light-secondary-color);
@@ -36,6 +37,14 @@
 
 .box-shadow {
   box-shadow: var(--box-shadow-2);
+}
+
+.bg-light-primary {
+  background-color: var(--light-primary-color);
+}
+
+.bg-light-secondary {
+  background-color: var(--light-secondary-color);
 }
 
 .grid-layout {
