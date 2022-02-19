@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/Assets/favicon.ico" />
+    <title>Introduction | Lens UI</title>
+  </head>
+  <body>
+    <section class="d-flex col">
+      <header class="nav__header d-flex align-center space-bw gap-1">
+        <span
+          class="icon d-flex xy-center txt-bold rounded ml-1 hamburger-menu"
+        >
+          <i class="fas fa-bars"></i>
+        </span>
+        <div class="header__left ml-1 d-flex align-center gap-1">
+          <!--  Todo : Add Logo -->
+          <h1 class="h3 mr-2">Lens-UI</h1>
+          <span class="icon d-flex xy-center txt-bold nav-closeBtn">
+            <i class="fas fa-times"></i>
+          </span>
+          <a href="#" class="nav-links mr-2"><strong>Home</strong></a>
+          <a href="/Components/Alert/alert.html" class="nav-links"
+            ><strong>Docs</strong></a
+          >
+        </div>
+        <div class="header__right ml-auto d-flex align-center gap-2">
+          <a href="https://github.com/devananth/LensUI" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/devananthnkl/" target="_blank">
+            <span
+              class="icon mr-1 d-flex xy-center txt-bold rounded-full nav-links"
+            >
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/devananthnkl" target="_blank">
+            <span class="icon d-flex xy-center txt-bold rounded-full nav-links">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+        </div>
+      </header>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <main>
+        <section class="grid-50-50 xy-center px-2">
+          <div>
+            <h1>Build your UI Faster</h1>
+            <p class="txt-2xl">
+              Build your UI faster by copying and pasting the components at one
+              click. It is user-friendly and customizable. Spend less time in
+              designing and concentrate more on logic without hustling on UI.
+              Happy Coding!
+            </p>
+            <div class="mt-1">
+              <a href="/Components/Alert/alert.html">
+                <button class="btn btn-primary mr-1">Documentation</button>
+              </a>
+              <a href="#installation">
+                <button class="btn btn-secondary">Installation</button>
+              </a>
+            </div>
+          </div>
+          <img src="/Assets/Design.png" class="img-responsive" alt="design" />
+        </section>
+        <div class="divider"></div>
+        <div class="divider"></div>
+        <div class="divider"></div>
+        <section class="grid-50-50 xy-center px-2">
+          <div>
+            <h3 id="installation" class="txt-bold">Installation</h3>
+            <p class="txt-2xl">
+              Copy and paste the code in the head tag of your html document. So
+              that you can style your components by just adding class names to
+              your html elements.
+            </p>
+            <a href="/Components/Alert/alert.html"
+              ><button class="btn btn-primary mt-1">Documentation</button></a
+            >
+          </div>
+          <div class="component__carbon--container ml-2">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-light&wt=none&l=htmlmixed&width=881.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--------%2520Include%2520this%2520in%2520head%2520tag%2520---------------%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Flens-ui.netlify.app%252Fstyle.css%2522%252F%253E%250A"
+              style="border: 0; transform: scale(1); overflow: hidden"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <footer class="p-1">
+        <p class="txt-center">Made with ❤️ by Devananth © 2022</p>
+      </footer>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
