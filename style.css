@@ -11,9 +11,7 @@
 
 /* Utilities */
 .divider {
-  display: block;
-  border-bottom: 2px solid var(--light-secondary-color);
-  margin: var(--sp-2) 0rem;
+  height: 2rem;
 }
 
 .icon {
