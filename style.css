@@ -115,7 +115,7 @@
 .main-content {
   grid-area: main;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .component__description {
@@ -141,6 +141,9 @@
 }
 
 /* Pagination */
+.pagination {
+  margin: var(--sp-1);
+}
 .pagination a:hover {
   color: var(--primary-color);
 }
@@ -151,6 +154,7 @@
   grid-area: aside;
   height: 100vh;
   padding: var(--sp-0-25);
+  margin-left: var(--sp-0-5);
 }
 
 .aside__item {
