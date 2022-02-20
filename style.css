@@ -21,29 +21,6 @@
   margin: 0rem var(--sp-0-25);
 }
 
-.hide {
-  display: none;
-}
-
-.success {
-  color: var(--success-color);
-}
-
-.danger {
-  color: var(--danger-color);
-}
-
-.box-shadow {
-  box-shadow: var(--box-shadow-2);
-}
-
-.bg-light-primary {
-  background-color: var(--light-primary-color);
-}
-
-.bg-light-secondary {
-  background-color: var(--light-secondary-color);
-}
 
 .grid-layout {
   display: grid;
@@ -100,10 +77,11 @@
 }
 
 .sidebar__item:hover,
-.sidebar__item a:active {
+.sidebar__item.active {
   color: var(--primary-color);
   font-weight: 500;
   padding-left: var(--sp-1-5);
+  border-left:2px solid var(--dark-primary-color);
 }
 
 .sidebar__content {
