@@ -13,3 +13,40 @@
 .d-grid {
   display: grid;
 }
+
+.hide {
+  display: none;
+}
+
+/* Width */
+.w-100{
+  width : 100%;
+}
+
+.w-50{
+  width : 50%;
+}
+
+/* Background Utilities */
+
+.bg-light-primary {
+  background-color: var(--light-primary-color);
+}
+
+.bg-light-secondary {
+  background-color: var(--light-secondary-color);
+}
+
+
+.success {
+  color: var(--success-color);
+}
+
+.danger {
+  color: var(--danger-color);
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow-2);
+}
+
