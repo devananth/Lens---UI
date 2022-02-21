@@ -5,6 +5,7 @@
 @import url("./Styles/margin.css");
 @import url("./Styles/border.css");
 @import url("./Styles/flex.css");
+@import url("./Styles/display.css");
 
 /* Components Stylesheets */
 @import url("./Components/component.css");
